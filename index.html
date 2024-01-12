@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Form Using Events</title>
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <form action="">
+
+            <label for="name">First Name:</label>
+            <input type="text" id="text" onfocus="input(this)" onblur="mout(this)" oninput="inputFunction(this)"><br><br>
+
+            <label for="name">Last Name:</label>
+            <input type="text" id="text-col" onfocus="input(this)" onblur="mout(this)" oninput="inputFunction(this)"><br><br>
+
+            <label for="name">Father's Name:</label>
+            <input type="text" id="text" onfocus="input(this)" onblur="mout(this)" oninput="inputFunction(this)"><br><br>
+
+            <label for="name">I D No.:</label>
+            <input type="number" id="text" onfocus="input(this)" onblur="mout(this)" oninput="inputFunction(this)"><br><br>
+
+            <label for="name">Date Of Birth</label>
+            <input type="date" id="text" onfocus="input(this)" onblur="mout(this)" oninput="inputFunction(this)"><br><br>
+
+            <input type="button" id="" class="btn" value="Submit" onfocus="button(this)" onblur="mout(this)"><br><br>
+
+
+        </form>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        function mout(out) {
+            out.style.background = "";
+        }
+        function input(text) {
+            text.style.background = "lightGray";
+        }
+        function button(btn) {
+            btn.style.background = "orange";
+        }
+        function inputFunction(data){
+            var storedata = data.value;
+            console.log(storedata);
+        }
+
+    </script>
+
+
+
+
+</body>
+
+</html>
